@@ -1,0 +1,94 @@
+.sidebar .overlay{
+    background-color: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(4px);
+    min-width: 300px !important;
+    height: 100vh;
+    position: relative;
+}
+.sidebar .sidebar-container{
+    position: absolute;
+    right: 0;
+    width: 65%;
+    height: 100vh;
+    background-color: var(--off_white_background);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+    margin-bottom: 50px;
+    /* padding: 19px 33px 0 10px; */
+}
+.sidebar p{
+    margin: 0 !important;
+}
+.sidebar .sidebar-close-icon {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: start;
+    padding: 18px 0 0 18px;
+}
+.sidebar .sidebar-close-icon svg {
+    height: 20px;
+    width: 20px;
+}
+.user-data{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
+.name-location-container .user-name{
+    font-size: 18px;
+}
+.location{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 10px;
+}
+.user-data .user-photo img{
+    width: 77px;
+    height: 77px;
+    border-radius: 50%;
+}
+.sidebar .sidebar-nav-links {
+    width: 80% !important;
+    list-style: none;
+    text-align: left !important;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    flex-direction: column-reverse;
+    gap: 10px;
+    padding: 4px;
+}
+.sidebar .sidebar-nav-links  a{
+    color: var(--black);
+    text-decoration: none;
+    width: 100%;
+    text-align: right;
+    padding: 8px;
+    border-radius: 7px;
+}
+.sidebar .sidebar-nav-links  a.active-nav{
+    background-color: var(--main_green);
+    padding-right: 5px;
+}
+.sidebar .sidebar-container .logout{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-size: 16px;
+    gap: 7px;
+    width: 75%;
+    margin-top : auto ;
+    margin-bottom: 50px;
+}
+.sidebar .sidebar-container .logout svg{
+    width: 15px;
+    height: 15px;
+}
