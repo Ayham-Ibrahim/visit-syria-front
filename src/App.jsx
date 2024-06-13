@@ -1,5 +1,6 @@
 import { Routes ,Route } from 'react-router-dom'
 import './App.css'
+import Footer from './layout/Footer/Footer'
 import HomePage from './pages/HomePage/HomePage'
 import ExplorePage from './pages/ExplorePage/ExplorePage'
 import AboutPage from './pages/AboutPage/AboutPage'
@@ -8,10 +9,15 @@ import BookPage from './pages/BookPage/BookPage'
 import Navbar from './layout/Navbar/Navbar'
 import Sidebar from './layout/Sidebar/Sidebar'
 import RecommendationsPage from './pages/RecommendationsPage/RecommendationsPage'
+
+
 function App() {
 
   return (
     <>
+
+<Footer/>
+
     <Navbar />
     <Routes>
       <Route path='/' element={<HomePage/>} />
