@@ -2,6 +2,9 @@
 import { Routes ,Route } from 'react-router-dom'
 import './App.css'
 import Footer from './layout/Footer/Footer'
+import RateStars from './shared/RateStars/RateStars'
+import SearchBox from './shared/SearchBox/SearchBox'
+import SectionRating from './shared/SectionRating/SectionRating'
 import HomePage from './pages/HomePage/Homepage'
 import ExplorePage from './shared/ExplorePage/ExplorePage'
 import AboutPage from './pages/AboutPage/AboutPage'
@@ -16,6 +19,11 @@ import RecommendationsPage from './pages/RecommendationsPage/RecommendationsPage
 function App() {
   return (
     <>
+
+    <SearchBox/>
+    <RateStars/>
+    <SectionRating/>
+
 
       <PlaceDetails />
 
@@ -34,6 +42,7 @@ function App() {
     </Routes>
 
     <Footer/>
+
 
     </>
   );
