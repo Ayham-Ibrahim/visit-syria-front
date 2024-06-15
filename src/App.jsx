@@ -1,3 +1,4 @@
+
 import { Routes ,Route } from 'react-router-dom'
 import './App.css'
 import Footer from './layout/Footer/Footer'
@@ -11,11 +12,18 @@ import Navbar from './layout/Navbar/Navbar'
 import RecommendationsPage from './pages/RecommendationsPage/RecommendationsPage'
 
 
-function App() {
 
+function App() {
   return (
     <>
-    <Navbar/>
+
+      <PlaceDetails />
+
+
+
+
+    <Navbar />
+
     <Routes>
       <Route path='/' element={<HomePage/>} />
       {/* <Route path='/explore' element={<ExplorePage />} /> */}
@@ -24,9 +32,11 @@ function App() {
       <Route path='/booking' element={<BookPage />} />
       <Route path='/recommendations' element={<RecommendationsPage />} />
     </Routes>
+
     <Footer/>
+
     </>
-  )
+  );
 }
 
-export default App
+export default App;
