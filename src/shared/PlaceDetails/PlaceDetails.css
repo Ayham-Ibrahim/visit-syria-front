@@ -1,0 +1,84 @@
+.placedetails {
+  margin: 30px auto;
+  width: 60vw;
+  text-align: right;
+  padding: 0 50px;
+}
+.placedetails .maininfo-es {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  padding-left: 25px;
+}
+
+.placedetails .maininfo-es .rightinfo-es {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+  padding-top: 30px;
+}
+
+.placedetails .maininfo-es .rightinfo-es h1 {
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.placedetails .maininfo-es .rightinfo-es .star-rating {
+  font-size: 28px;
+}
+
+.placedetails .maininfo-es .rightinfo-es p {
+  font-size: 10px;
+  font-weight: 600;
+}
+
+.placedetails .maininfo-es .rightinfo-es p i {
+  padding-right: 5px;
+}
+
+.placedetails .maininfo-es .leftinfo-es img {
+  width: 130px;
+}
+
+.placedetails .placedescription {
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 30px;
+}
+
+@media (max-width: 768px) {
+  .placedetails .maininfo-es .rightinfo-es {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+
+  .placedetails .maininfo-es .rightinfo-es .stars-location-es {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .placedetails .maininfo-es .rightinfo-es h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+
+  .placedetails .maininfo-es .rightinfo-es .star-rating {
+    font-size: 20px;
+    display: flex;
+  }
+
+  .placedetails .maininfo-es .leftinfo-es img {
+    display: none;
+  }
+
+  .placedetails .placedescription {
+    font-size: 15px;
+    width: 90%;
+    margin: auto;
+    text-align: center;
+  }
+}
