@@ -153,3 +153,8 @@ body {
     font-weight: var(--main_font_weight_paragraph);
     font-family: "FrutigerLTArabic";
 }
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
