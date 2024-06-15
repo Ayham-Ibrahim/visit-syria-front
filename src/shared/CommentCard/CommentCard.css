@@ -1,0 +1,41 @@
+.card-custom {
+  transition: transform 0.5s ease;
+  cursor: pointer;
+}
+
+.card-custom:hover {
+  transform: scale(1.05);
+}
+
+.overflow-auto {
+  white-space: nowrap;
+}
+.content-comment-card {
+  width: 508px;
+  height: 197px;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 41.45px;
+}
+.comment-card {
+  background-color: var(--white);
+  width: 569px;
+  height: 380px;
+  padding: 22px 30px;
+  border-radius: 15px;
+}
+.container .row .col-3 img {
+  width: 111px;
+  height: 111px;
+}
+.comment-writer-name {
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 41.45px;
+}
+.date-of-comment {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 30.7px;
+  color: var(--light_green_text);
+}

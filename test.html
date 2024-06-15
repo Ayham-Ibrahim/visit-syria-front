@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Testimonial Card Example</title>
+    <!-- Include Bootstrap CSS -->
+    <link
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+      </ol>
+
+      <!-- Wrapper for slides -->
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img
+            src="./src/assets/images/comment-img-1.jpg"
+            alt="Image 1"
+            style="width: 50%"
+          />
+          <div class="carousel-caption">
+            <h3>Najib Anwar</h3>
+            <p>
+              My recent stay at [Hotel Name] was nothing short of exceptional.
+            </p>
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <img
+            src="./src/assets/images/comment-img-2.png"
+            alt="Image 2"
+            style="width: 50%"
+          />
+          <div class="carousel-caption">
+            <h3>Najib Anwar</h3>
+            <p>
+              From the moment I arrived until my departure, every aspect of the
+              hotel exceeded my expectations.
+            </p>
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <img
+            src="./src/assets/images/home-cover.png"
+            alt="Image 3"
+            style="width: 50%"
+          />
+          <div class="carousel-caption">
+            <h3>Najib Anwar</h3>
+            <p>My recent stay was nothing short of amazing.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Left and right controls -->
+      <a class="carousel-control-prev" href="#myCarousel" data-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </a>
+      <a class="carousel-control-next" href="#myCarousel" data-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </a>
+    </div>
+
+    <!-- Include Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </body>
+</html>
