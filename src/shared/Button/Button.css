@@ -1,0 +1,39 @@
+.search-button-inside-searchBar {
+  padding: 8.97px 142px 8.97px 142px;
+  border-radius: 45.5px;
+}
+.search-button-outside-searchBar {
+  padding: 11.71px 31.23px 11.71px 31.23px;
+  border-radius: 31.23px;
+}
+/* all cards without blogs card */
+.card-button {
+  border-radius: 4.48px;
+  padding: 8.97px 17.93px 8.97px 17.93px;
+  border-width: 1.12px;
+}
+.comment-button {
+  padding: 7.84px 15.69px 7.84px 15.69px;
+  border-width: 0.98px;
+  border-radius: 3.92px;
+}
+.reserve-button {
+  padding: 17.5px 132px 17.5px 132px;
+  border-radius: 8.75px;
+  border-width: 2.19px;
+}
+.discoverMore-button + .fromHere-button {
+  padding: 13.78px 27.55px 13.78px 27.55px;
+  border-width: 1.72px;
+  border-radius: 6.89px;
+}
+.More-button {
+  padding: 14px, 39px, 14px, 39px;
+  border-radius: 6.89px;
+  border-width: 1.72px;
+}
+.blogsCard-button {
+    padding: 13.78px 27.55px 13.78px 27.55px;
+    border-width: 1.72px;
+    border-radius: 6.89px;
+}

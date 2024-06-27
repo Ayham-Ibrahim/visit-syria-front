@@ -1,4 +1,12 @@
 
+// import { Routes, Route } from "react-router-dom";
+import "./App.css";
+// import Button from "./shared/Button/Button";
+// import CommentCard from "./shared/CommentCard/CommentCard";
+import ContactSection from "./shared/ContactSection/ContactSection";
+
+
+
 import { Routes ,Route } from 'react-router-dom'
 import './App.css'
 import Footer from './layout/Footer/Footer'
@@ -19,6 +27,28 @@ import RecommendationsPage from './pages/RecommendationsPage/RecommendationsPage
 function App() {
   return (
     <>
+      {/* <Test /> */}
+      {/* <Button
+        btnText="ابحث"
+        // radius="45.5px"
+        className="reserve-button"
+        // classForSearchButton="d-grid gap-2 col-6 mx-auto"
+      /> */}
+      {/* <div className="row">
+        <CommentCard
+          name="Sara Adam"
+          date="24.08.2023"
+          img_path="/src/assets/images/comment-img-2.png"
+        />
+        <CommentCard
+          name="Sara Adam"
+          date="24.08.2023"
+          img_path="/src/assets/images/comment-img-2.png"
+        />
+      </div> */}
+      <ContactSection />
+
+
 
     <SearchBox/>
     <RateStars/>

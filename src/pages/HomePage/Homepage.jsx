@@ -1,3 +1,8 @@
+
+// import React from 'react'
+// import Navbar from '../../layout/Navbar/Navbar'
+
+
 import React from 'react'
 import ExplorePage from '../../shared/ExplorePage/ExplorePage'
 // import Navbar from '../../layout/Navbar/Navbar'
@@ -17,6 +22,7 @@ function HomePage() {
       </ExplorePage>
     </div>
   )
+
 }
 
-export default HomePage
+export default HomePage;
