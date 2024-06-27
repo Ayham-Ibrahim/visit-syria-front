@@ -1,0 +1,58 @@
+body,
+html {
+  overflow-x: hidden;
+}
+
+.blog-page {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.blog-page .blog-header {
+  display: inline-block;
+}
+
+.blog-page .blog-header img {
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  object-fit: cover;
+}
+
+.blog-page .blog-header .blog-tabs {
+  position: relative;
+  display: flex;
+  gap: 30px;
+  margin-right: 150px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.blog-page .blog-header .blog-tabs a {
+  text-align: center;
+  width: 130px;
+  border-radius: 16px 15px 0px 0px;
+  font-family: Frutiger LT Arabic;
+  font-size: 1.75rem;
+  font-weight: 700;
+  line-height: 53.73px;
+  color: white;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+
+.blog-page .blog-header .blog-tabs a:hover {
+  background-color: #f3f3f3;
+  color: black;
+}
+
+.blog-page .blog-header .blog-tabs a.active-link {
+  background-color: #f3f3f3;
+  color: black;
+}
