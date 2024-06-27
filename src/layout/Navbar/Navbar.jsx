@@ -16,7 +16,7 @@ function Navbar() {
 
   return (
     <>
-    <div className='navbar'>
+    <div className='navbar z-3'>
       <div className="container">
         <div className="login-icon">
           <img src={personImage} alt="person image" />
