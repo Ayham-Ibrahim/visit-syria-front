@@ -1,0 +1,39 @@
+.rating-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 30px;
+
+}
+
+.rating-section button{
+    border: none;
+    outline: none;
+    background-color: var(--main_green);
+    width: 100px;
+    display: block;
+padding: 10px;
+    margin-top: 30px;
+cursor: pointer;
+    margin: auto;
+}
+
+.rating-section select{
+    border: none;
+    width: 60vw;
+    margin-bottom: 10px;
+    background-color: var(--light_gray);
+    outline: none;
+}
+
+@media screen and (max-width:992px) {
+    .rating-section select{
+        border: none;
+        width: 50vw;
+        margin: auto;
+        margin-bottom: 10px;
+        background-color: var(--light_gray);
+        outline: none;
+    }
+}

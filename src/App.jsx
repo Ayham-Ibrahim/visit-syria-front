@@ -1,6 +1,10 @@
+
 import { Routes ,Route } from 'react-router-dom'
 import './App.css'
 import Footer from './layout/Footer/Footer'
+import RateStars from './shared/RateStars/RateStars'
+import SearchBox from './shared/SearchBox/SearchBox'
+import SectionRating from './shared/SectionRating/SectionRating'
 import HomePage from './pages/HomePage/Homepage'
 import ExplorePage from './shared/ExplorePage/ExplorePage'
 import AboutPage from './pages/AboutPage/AboutPage'
@@ -12,11 +16,23 @@ import RecommendationsPage from './pages/RecommendationsPage/RecommendationsPage
 import Explorer from './pages/ExplorerPage/Explorer'
 
 
-function App() {
 
+function App() {
   return (
     <>
-    <Navbar/>
+
+    <SearchBox/>
+    <RateStars/>
+    <SectionRating/>
+
+
+      <PlaceDetails />
+
+
+
+
+    <Navbar />
+
     <Routes>
       <Route path='/' element={<HomePage/>} />
       <Route path='/explorer/:section' element={<Explorer />} />
@@ -25,9 +41,12 @@ function App() {
       <Route path='/booking' element={<BookPage />} />
       <Route path='/recommendations' element={<RecommendationsPage />} />
     </Routes>
+
     <Footer/>
+
+
     </>
-  )
+  );
 }
 
-export default App
+export default App;

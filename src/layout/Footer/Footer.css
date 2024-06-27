@@ -53,10 +53,7 @@ footer .footer .line::after{
     background-color: var(--white);
     right: 0px;
 } 
-footer .row-social  .mail span.mail-footer{
-    /* text-align: center; */
-
-} 
+ 
 
 
  footer .email-footer{
