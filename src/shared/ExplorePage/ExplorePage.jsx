@@ -4,7 +4,7 @@ import './Explore.css'
 import { useState } from 'react'
 import { IoIosArrowDown } from 'react-icons/io';
 
-function ExplorePage( { img, value, setValue, onClickBtn, options1 = ['de2d2d', 'dweddwed', 'dewdwedewd'], options2 = ['de2d2d', 'dweddwed', 'dewdwedewd'], setFirstSelect, setSecondSelect, children } ) {
+function ExplorePage( { img, value, setValue, onClickBtn, options1, options2 = ['id', 'الاسم', 'المحافظة'], setFirstSelect, setSecondSelect, children } ) {
   const [showSelect, setShowSelect] = useState(0);
 
   return (

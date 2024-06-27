@@ -9,6 +9,7 @@ import BookPage from './pages/BookPage/BookPage'
 import Navbar from './layout/Navbar/Navbar'
 // import Sidebar from './layout/Sidebar/Sidebar'
 import RecommendationsPage from './pages/RecommendationsPage/RecommendationsPage'
+import Explorer from './pages/ExplorerPage/Explorer'
 
 
 function App() {
@@ -18,7 +19,7 @@ function App() {
     <Navbar/>
     <Routes>
       <Route path='/' element={<HomePage/>} />
-      {/* <Route path='/explore' element={<ExplorePage />} /> */}
+      <Route path='/explorer/:section' element={<Explorer />} />
       <Route path='/about' element={<AboutPage />} />
       <Route path='/blog' element={<BlogPage />} />
       <Route path='/booking' element={<BookPage />} />
