@@ -190,9 +190,10 @@
 }
 
 .explorer .explorer-cards-grid {
-    padding: 92px 110px;
+    padding: 92px 110px 180px;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(240px,1fr));
+    gap: 50px;
 }
 
 .explorer .mobile-select {

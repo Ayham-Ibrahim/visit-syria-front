@@ -12,9 +12,9 @@ function HomePage() {
   const array = [Img1, Img2, Img3, Img4, Img1, Img2, Img3];
   return (
     <div className='bg-white'>
-      <ExplorePage img={img}>
-        <PhotoSlider imgs={array}/>
-      </ExplorePage>
+      {/* <ExplorePage img={img}> */}
+        {/* <PhotoSlider imgs={array}/> */}
+      {/* </ExplorePage> */}
     </div>
   )
 }
