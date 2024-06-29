@@ -1,26 +1,33 @@
 import React, { useState } from "react";
-import statue from "../../assets/images/statue.png";
 import "./BlogPage.css";
-import { NavLink } from "react-router-dom";
+import Hero from "../../components/Hero/Hero";
+import statue from "../../assets/images/statue.png";
 
 function BlogPage() {
+  let list = ["الطبيعية", "الأثرية"];
+
+  const [activeItem, setActiveItem] = useState(1);
+
+  const handleItemClick = (itemIndex) => {
+    setActiveItem(itemIndex);
+  };
+
   return (
-    <div className="blog-page">
-      <div className="blog-header">
-        <img src={statue} alt="" />
-        <div className="blog-tabs">
-          <NavLink
-            to={"/blog/archeological"}
-            className={({ isActive }) => (isActive ? "active-link" : "link")}
-          >
-            الأثرية
-          </NavLink>
-          <NavLink
-            to={"/blog/nature"}
-            className={({ isActive }) => (isActive ? "active-link" : "link")}
-          >
-            الطبيعة
-          </NavLink>
+    <div className="BY_BlogPage">
+      <Hero backgroundImage={statue} />
+      <div className="BY_container">
+        <div className="taps">
+          <ul>
+            {list.map((item, index) => (
+              <li
+                key={index}
+                className={activeItem === index ? "active" : ""}
+                onClick={() => handleItemClick(index)}
+              >
+                {item}
+              </li>
+            ))}
+          </ul>
         </div>
       </div>
     </div>
