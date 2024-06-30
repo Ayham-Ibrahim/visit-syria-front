@@ -1,0 +1,101 @@
+.register-page {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: var(--light_green_language); */
+    background-image: url('./../../assets/images/home-cover.png');
+    background-size: cover;
+    object-fit: cover;
+}
+
+.register-page .form-container{
+    width: 605px;
+    height: 570px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--white);
+    border-radius: 10px;
+}
+.register-page .form-container .site-name h1{
+    font-size: 3rem;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+.register-page .form-container .site-name h1 span{
+    color: var(--main_green);
+}
+.register-page .form-container .hello-text p{
+    font-size: 20px;
+    margin-bottom: 25px;
+}
+.register-page .form-container form{
+    width: 75%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.register-page .form-container form input {
+    width: 100%;
+    height: 50px;
+    outline: none;
+    border: 0;
+    margin-bottom: 32px;
+    background-color: var(--light_green_language);
+    border: 1px solid var(--main_green);
+    border-radius: 8px;
+    padding: 13px 20px;
+    direction: rtl;
+}
+.register-page .form-container form input::placeholder{
+    font-size: 18px;
+    opacity: 100% !important;
+    color: #A1A1A1;
+    
+}
+.register-page .form-container form button{
+    width: 205px;
+    height: 50px;
+    border-radius: 8px;
+    background-color: var(--green_button);
+    font-size: 20px;
+    border: none;
+    outline: none;
+    text-align: center;
+}
+
+
+@media (max-width : 786px) {
+    .register-page .form-container{
+        max-width: 80%;
+    }
+    .register-page .form-container .site-name h1{
+        font-size: 2.5rem;
+        margin-top: 80px;
+        margin-bottom: 30px;
+    }
+    .register-page .form-container .hello-text p{
+        font-size: 16px;
+        margin-bottom: 32px;
+    }
+    .register-page .form-container form input {
+        width: 100%;
+        height: 35px;
+    }
+    .register-page .form-container form input::placeholder{
+        font-size: 14px;
+        
+    }
+    .register-page .form-container{
+        height: 550px;
+    }
+    .register-page .form-container form button{
+        width: 120px;
+        height: 30px;
+        font-size: 16px;
+    }
+}

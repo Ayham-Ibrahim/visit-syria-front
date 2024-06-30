@@ -12,6 +12,7 @@
 }
 .navbar .container{
 margin: 0 112px !important;
+padding: 0;
 }
 .navbar ul{
     list-style: none;
@@ -41,6 +42,17 @@ margin: 0 112px !important;
 .bar-icon{
     display: none;
     
+}
+@media (max-width: 989px){
+    .navbar ul{
+        gap: 25px;
+    }
+    .navbar ul li a{
+        font-size: 14px;
+    }
+    .navbar .nav-brand {
+        font-size: 24px ;
+    }
 }
 @media (max-width: 767px) {
     .navbar{
