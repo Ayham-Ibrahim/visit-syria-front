@@ -1,0 +1,277 @@
+.explorer {
+    z-index: 0;
+    min-height: 110vh;
+}
+
+.explorer .explorer-hero {
+    min-height: 100vh;
+}
+
+.explorer .explorer-hero .explorer-top-section {
+    height: calc(100vh - 96px);
+}
+
+.explorer .explorer-hero .search-filter {
+    z-index: 5;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 964px;
+    background-color: rgba(255, 255, 255, 1);
+    border-radius: 55px;
+    box-shadow: 0px 8px 11px 2px rgba(0, 0, 0, 0.25);
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.explorer .explorer-hero .explorer-top-section .search-icon {
+    font-size: 2.5rem;
+    margin-right: 32px;
+}
+
+.explorer .explorer-hero .search-filter .search-btn {
+    font-family: Frutiger LT Arabic;
+    font-size: 1.875rem;
+    font-weight: 400;
+    line-height: 30.57px;
+    text-align: center;
+    padding: 33px 50px;
+    border-radius: 45.5px;
+    background-color: rgba(141, 211, 187, 1);
+    cursor: pointer;
+    color: rgba(0, 0, 0, 1);
+    opacity: 70%;
+    transition: .3s ease;
+}
+
+.explorer .explorer-hero .search-filter .search-btn:hover {
+    opacity: 100%;
+}
+
+.explorer .explorer-hero .search-filter input {
+    all: unset;
+    padding: 20px 0;
+    margin: 0 45px 0;
+    width: 100%;
+    font-size: 2rem;
+    font-weight: 500;
+    line-height: 59.97px;
+    text-align: right;
+}
+
+.explorer .explorer-hero .search-filter input::placeholder {
+    font-family: Cairo;
+    font-size: 2rem;
+    font-weight: 500;
+    line-height: 59.97px;
+    text-align: right;
+    color: rgba(113, 113, 113, 1);
+}
+
+.explorer .explorer-hero .tabs {
+    width: 100%;
+    height: 96px;
+    background-color: rgba(141, 211, 187, 1);
+}
+
+.tabs-container {
+    padding-top: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.explorer .tabs a {
+    display: block;
+    text-align: center;
+    padding: 10px 22px 22px 22px;
+    border-radius: 16px 15px 0px 0px;
+    font-family: Frutiger LT Arabic;
+    font-size: 1.75rem;
+    font-weight: 700;
+    line-height: 53.73px;
+    color: rgba(0, 0, 0, 0.47);
+    text-decoration: none;
+    transition: .3s ease;
+}
+.explorer .tabs a.active ,
+.explorer .tabs a:hover {
+    background-color: white;
+    color: black;
+}
+
+.explorer .break,
+.explorer .break-mobile {
+    transform: translateY(18px);
+    width: 2px;
+    height: 30px;
+    background-color: black;
+}
+
+.explorer .break-mobile {
+    height: 20px;
+    transform: translateY(25px);    
+}
+
+.explorer .select {
+    padding: 10px 22px 22px 22px;
+    border-radius: 16px 15px 0px 0px;
+    transition: .3s ease;
+    cursor: pointer;
+}    
+
+.explorer .select.active,
+.explorer .select:hover {
+    background-color: white;
+}
+
+.explorer .explorer-hero .select.active label,
+.explorer .explorer-hero .select:hover label{
+    color: black;
+}
+
+.explorer ul {
+    position: absolute;
+    list-style: none;
+    box-shadow: 0 0 10px 0 #ccc;
+    left: 50%;
+    top: 70%;
+    min-width: 100%;
+    transform: translate(-50%);
+    background-color: white;
+    padding: 0;
+    border-radius: 5px;
+    text-align: center;
+    font-family: Frutiger LT Arabic;
+    font-size: 1.25rem;
+    line-height: 53.73px;
+    color: rgba(0, 0, 0, 0.47);
+    direction: rtl;
+    flex-direction: column;
+    z-index: 2;
+    display: none;
+}
+
+.explorer ul.active {
+    display: flex;
+}
+
+.explorer ul li {
+    opacity: 50%;
+    padding: 10px;
+    transition: .3s ease;
+    cursor: pointer;
+}
+
+.explorer ul li:not(:last-child) {
+    border-bottom: 1px solid black;
+}
+
+.explorer ul li:hover {
+    opacity: 100%;
+}
+
+.explorer label {
+    font-family: Frutiger LT Arabic;
+    font-size: 1.75rem;
+    font-weight: 700;
+    line-height: 53.73px;
+    color: rgba(0, 0, 0, 0.47);
+    direction: rtl;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 22px;
+}
+
+.explorer .explorer-cards {
+    background-color: white;
+}
+
+.explorer .explorer-cards-grid {
+    padding: 92px 110px 180px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px,1fr));
+    gap: 50px;
+}
+
+.explorer .mobile-select {
+    justify-content: space-around;
+    background-color: rgba(234, 234, 234, 1);
+    border-radius: 5px;
+    width: 90%;
+    margin: 30px auto 0;
+    opacity: 0;
+    display: none;
+}
+
+.explorer .select.mobile {
+    padding-bottom: 10px;
+    display: none;
+}
+
+.explorer .select.mobile.active {
+    background-color: transparent;
+}
+
+@media screen and (max-width: 1050px) {    
+    .explorer .explorer-hero .search-filter {
+        width: 700px;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .explorer .select,
+    .explorer .break {
+        display: none;
+    }
+    .explorer .select.mobile {
+        display: block;
+    }
+
+    .explorer .mobile-select {
+        opacity: 100%;
+        display: flex;
+    }
+}
+
+@media screen and (max-width: 768px) {    
+    .explorer .explorer-hero .search-filter .search-btn {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, 70%);
+        width: 100%;
+    }
+
+    .explorer .explorer-hero .search-filter {
+        width: 90%;
+        padding: 0;
+    }
+
+    .explorer .explorer-cards-grid {
+        padding: 92px 50px;
+    }
+}
+
+@media screen and (max-width: 400px) {    
+    .explorer .mobile-select {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .explorer .break-mobile {
+        display: none;
+    }
+
+    .explorer .tabs {
+        height: max-content !important;
+    }
+
+    .explorer .tabs-container {
+        flex-direction: column;
+    }
+
+}

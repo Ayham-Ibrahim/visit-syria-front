@@ -1,0 +1,143 @@
+/* .head-test{
+    background-image: url(../../assets/icons/Rectangle.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 600px;
+    background-position: 50%;
+} */
+
+.search-box
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+     margin: auto;
+    align-items: center;
+}
+
+.search-box form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 195px;
+margin-bottom: 328px;
+    position: relative;
+}
+.search-box form input{
+    border: none;
+    width: 80vw;
+    display: block;
+height: 110px;
+margin: auto;
+    outline: none;
+    padding: 25px 0px;
+    padding-right:70px;
+
+    text-align: end;
+    border-radius: 55px;
+    background-color: var(--white);
+}
+.search-box form input::placeholder {
+    text-align: right;
+ line-height: 59px;
+ /* padding-right: 70px; */
+    font-family: 'cairo';
+    color: var(--dark_gray_text);
+    font-weight: 500;
+    font-size: 2rem;
+    
+}
+.search-box form button{
+
+
+    position: absolute;
+    top:32px;
+    left: 0;
+    height: 91px;
+    font-size: 1rem;
+    width: 159px;
+    font-weight: 400;
+    cursor: pointer;
+    margin: 0px 10px;
+    display: block;
+text-align: center;
+    top: 10px;
+    border: none;
+    outline: none;
+    border-radius: 45.5px;
+    background-color:var(--main_green) ;
+    
+}
+.search-box .seacrh-icon{
+    position: absolute;
+    width: 46px;
+    margin: auto;
+    /* display: flex;
+    justify-content: flex-end;
+    align-items: center; */
+right: 10px;
+    height: 46px;
+}
+.search-box .seacrh-icon svg{
+    width: 37.42px;
+    margin: auto;
+display: block;
+    height: 37.42px;
+}
+@media screen  and (max-width:992px){
+   
+    .search-box form{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 195px;
+    }
+    .search-box form input{
+        border: none;
+        width: 80vw;
+        display: block;
+    height: 42.94px;
+    margin: auto;
+        outline: none;
+        /* padding: 25px 0px;
+        padding-right: 131px; */
+        text-align: end;
+    border-radius: 31px;
+        background-color: var(--white);
+    }
+    .search-box form input::placeholder {
+        text-align: right;
+     line-height: 59px;
+        font-family: 'cairo';
+        color: var(--dark_gray_text);
+        font-weight: 500;
+        font-size: 21px;
+        
+    }
+    .search-box form button{
+    
+    display: block!important;
+    position: relative;
+    width: 80vw;
+    margin-top: 16px;
+    height: 42.49px;
+    font-size: 15.62px;
+     
+    }
+    .search-box .seacrh-icon{
+        position: absolute;
+        width: 19.52px;
+        top: 15px;
+        margin: auto;
+        right: 40px;
+        height: 35px;
+    }
+    .search-box .seacrh-icon svg{
+        width: 15.45px;
+        margin: auto;
+        display: block;
+        height: 15.45px;
+    }
+}

@@ -1,0 +1,49 @@
+.rating-view {
+    display: flex;
+    flex-direction: column;
+    align-items:"flex-end";
+    justify-content: center;
+}
+.rating-view .rate-flex{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    max-width: 285px;
+    text-align: end;
+}
+.rating-view h2{
+    font-size:2rem ;
+    font-weight: 400;
+    color: var(--black);
+    
+}
+.rating-view .name-rate{
+    font-size: 24px;
+    align-items: center;
+    font-weight: 400;
+    line-height: 46.65px;
+    width: 72px;
+    padding-left: 13px;
+}
+.rating-view svg{
+    width: 30px;
+    height: 30px;
+    padding: 0px 6px;
+}
+@media screen and (max-width:992px) {
+    .rating-view {
+        display: flex;
+        margin: auto;
+        flex-direction: column;
+        align-items:"flex-end";
+        justify-content: center;
+        text-align: center;
+    }
+    .rating-view .rate-flex{
+        margin: auto;
+        align-items: center;
+    }
+     .rating-view .rate-flex h2{
+margin: auto; 
+text-align: center; }
+}

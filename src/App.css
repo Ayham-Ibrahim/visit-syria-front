@@ -1,0 +1,169 @@
+:root {
+
+    /* White */
+    --white: #FFFFFF;
+
+
+    /* Background*/
+    --off_white_background: #F3F3F3;
+
+
+    /*White Icons color*/
+    --white_icon_color: #F9F9F9;
+
+
+    /*White circles*/
+    --white_circles: #EEEEEE;
+
+
+    /*__________________________________________________________________*/
+
+    /* Black */
+    --black: #000000;
+    --black_trans_76: #000000c2;
+    --black_trans_70: #000000b3;
+    --black_trans_50: #00000080;
+    --black_trans_45: #00000073;
+    --black_trans_30: #0000004d;
+    --black_trans_20: #00000033;
+    --black_trans_05: #0000000d;
+
+    /* Black Button Text*/
+    --black_button_text: #112211;
+
+
+    /*__________________________________________________________________*/
+
+    /* Gray */
+    --light_gray_icons: #7D7D7D;
+    --light_gray_text: #777777;
+    --light_gray_location: #939393;
+    --light_gray_navbar: #C4C4C4;
+
+
+    /* Gray for light star and pagination */
+    --light_gray: #D9D9D9;
+
+
+    /* Gray dark stars*/
+    --dark_gray_star: #A5A3A3;
+
+
+    /* Gray Footer*/
+    --medium_gray: #525252;
+    --dark_gray: #363636;
+
+
+    /* Gray Placeholder*/
+    --dark_gray_text: #717171;
+
+
+    /* Gray for drop down list icon*/
+    --dark_gray_icon: #292D32;
+
+
+    /* Dark Gray Input Border*/
+    --dark_gray_input_border: #79747E;
+
+
+    /*__________________________________________________________________*/
+    /* Green */
+    --main_green: #8DD3BB;
+    --main_green_trans_53: #8dd3ba87;
+
+
+    /* Green Pagination Circles*/
+    --light_green: #96DBC3;
+    --light_green_trans_45: #95dbc273;
+
+
+    /* Green Buttons*/
+    --light_green_button: #A5EBD3;
+
+
+    /* Green Buttons Border*/
+    --light_green_button_border: #82CBB2;
+
+
+    /* Green Date Text and Visa Card*/
+    --light_green_text: #82CBB2;
+
+
+    /* Green Circle*/
+    --light_green_circle: #6FA694;
+
+
+    /* Dark Green Border*/
+    --dark_green: #2D765D;
+
+
+    /* Dark Green Text*/
+    --dark_green_text: #4B7063;
+
+
+    /*__________________________________________________________________*/
+
+    /* Yallow */
+    --yallow: #FFC908;
+
+
+    /*____________________________________________ Font ___________________________________________*/
+
+
+    /* Font Size*/
+
+    /* Section Title*/
+    --font_size_section_title: 3rem;
+    --font_weight_section_title: 700;
+
+    --font_size_section_title_responsive: 1.75rem;
+    --font_weight_section_title_responsive: 400;
+
+
+    /* Paragraph*/
+    --font_size_paragraph: 1.5rem;
+    --font_size_paragraph_responsive: 1rem;
+
+    /* Card*/
+    --font_size_card_title: 1.5rem;
+    --font_size_card_title_responsive: 1.125rem;
+
+    --font_size_card_paragraph: 0.88rem;
+    --font_size_card_paragraph_responsive: 0.75rem;
+
+
+    /* Blog Card*/
+    --font_size_blog_card_title: 2.5rem;
+    --font_size_blog_card_location: 1.375rem;
+    --font_size_blog_card_brief: 1.5rem;
+    --font_weight_blog_card: 400;
+
+
+    /* Font Weight*/
+    --main_font_weight_paragraph: 300;
+    --main_font_weight_paragraph_responsive: 400;
+
+}
+
+
+@font-face {
+    font-family: "FrutigerLTArabic";
+    src: local("FrutigerLTArabic"), url("./assets/fonts/FrutigerLTArabic55Roman.ttf") format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    background-color: var(--off_white_background);
+    font-weight: var(--main_font_weight_paragraph);
+    font-family: "FrutigerLTArabic";
+}
+
+
