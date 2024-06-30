@@ -1,10 +1,11 @@
 import { FaArrowDown, FaSearch } from 'react-icons/fa'
 import { Link, useLocation, useParams } from 'react-router-dom'
-import './Explore.css'
+import './PageLayout.css'
 import { useState } from 'react'
 import { IoIosArrowDown } from 'react-icons/io';
+// import SearchBox from '../SearchBox/SearchBox';
 
-function ExplorePage( { img, value, setValue, onClickBtn, options1, options2 = ['id', 'الاسم', 'المحافظة'], setFirstSelect, setSecondSelect, select1, select2, children } ) {
+function PageLayout( { img, value, setValue, onClickBtn, options1, options2 = ['id', 'الاسم', 'المحافظة'], setFirstSelect, setSecondSelect, select1, select2, children } ) {
   const [showSelect, setShowSelect] = useState(0);
 
   const { section } = useParams();
@@ -14,7 +15,7 @@ function ExplorePage( { img, value, setValue, onClickBtn, options1, options2 = [
   return (
     <section className='explorer w-100'>
       <div className='explorer-hero w-100'>
-        <div className='explorer-top-section w-100 position-relative z-0' style={!pathname?.includes('explore') && {height: '100vh'}}>
+        <div className='explorer-top-section w-100 position-relative z-0' style={!pathname?.includes('explore')? { height: '100vh' } : {}}>
           <img src={img} alt={'Hero wallpaper - descripe the section'} className='hero-img object-fit-cover w-100 h-100'/>
           <div className='search-filter position-absolute'>
             <span className='search-btn' onClick={onClickBtn}>ابحث</span>
@@ -86,4 +87,4 @@ function ExplorePage( { img, value, setValue, onClickBtn, options1, options2 = [
   )
 }
 
-export default ExplorePage
+export default PageLayout

@@ -48,7 +48,7 @@ function Navbar() {
               </Link>
             </li>
             <li>
-              <Link to='/about/'
+              <Link to='/about/visit'
                 className={`  ${activeItem === "about" ? "active-nav" : ""
                   }`}
                 onClick={()=>handleItemClick('about')}>

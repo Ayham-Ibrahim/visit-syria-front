@@ -1,8 +1,12 @@
 import React from 'react'
+import PageLayout from '../../shared/PageLayout/PageLayout'
+import Img from '../../assets/images/Rectangle 140.png'
 
 function AboutPage() {
   return (
-    <div>AboutPage</div>
+    <PageLayout img={Img}>
+            
+    </PageLayout>
   )
 }
 
