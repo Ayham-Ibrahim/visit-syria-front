@@ -75,11 +75,11 @@
     /* Green Pagination Circles*/
     --light_green: #96DBC3;
     --light_green_trans_45: #95dbc273;
-
-
+    --light_green_language : #D4EFE5;
+    
     /* Green Buttons*/
     --light_green_button: #A5EBD3;
-
+    --green_button: #57DEB0;
 
     /* Green Buttons Border*/
     --light_green_button_border: #82CBB2;
@@ -164,6 +164,7 @@ body {
     background-color: var(--off_white_background);
     font-weight: var(--main_font_weight_paragraph);
     font-family: "FrutigerLTArabic";
+    overflow-x: hidden !important;
 }
 
 
