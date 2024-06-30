@@ -1,0 +1,149 @@
+    .book-page {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 33.76px;
+    }
+    .book-form {
+        direction: rtl;
+        background-color: white;
+        padding: 22.21px;
+        border-radius: 11px;
+    }
+
+    .book-form span {
+        font-size: 12px;
+        font-weight: 400;
+    }
+    
+    .book-form p:first-child {
+        margin: 14px 0px 0px 0px;
+    }
+
+
+
+    .book-page .card {
+        max-width: 400px;
+        height: 491px;
+        margin: 20px auto;
+        padding: 21px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        direction: rtl;
+    }
+    .book-page .card .image {
+        max-width: 107px;
+    }
+    .place-image-ay {
+        width: 106.98px !important;
+        height: 106.1px;
+    }
+    .book-page .card .place-info {
+        display: flex;
+        gap: 18px;
+    }
+
+    .place-details {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .place-details h4 {
+        font-size: 15.62px;
+        font-weight:200 !important;
+        /* line-height: 29.97px; */
+        margin: 0px;
+        color: #112211;
+    }
+    .place-details p {
+    font-size: 17.68px;
+    font-weight: var(--font_weight_section_title);
+    line-height: 26.3px;
+    margin: 0px;
+    }
+
+    .place-details .book-rate {
+        display: flex;
+        gap: 8px;
+    }
+
+    .place-details .book-rate p {
+        font-weight:var(--font_weight_section_title);
+        font-size:10.61px;
+        line-height:20.36px;
+        text-align: right;
+        margin: auto;
+    }
+    
+    .book-page .place-image-ay {
+        width: 100%;
+        border-radius: 5px;
+    }
+
+    .book-page .card .price-details p {
+        font-size: 12.7px;
+        font-weight: var(--main_font_weight_paragraph_responsive);
+        border-width: 1px 0px 1px 0px;
+        border-color: #d6d6d6;
+        border-style: solid;
+        color: #121;
+        padding: 3.5px 0;
+
+    }
+
+    
+    .book-page .card .price-details ul{
+        padding: 0px;
+    }
+
+    .book-page .card .price-details ul li:first-child {
+        margin-top: 5px;
+    }
+    .book-page .card .price-details ul li {
+        margin-top: 10.7px;
+    }
+    .book-page .card .price-details ul li span:first-child,
+    .book-page .card .price-details .price-sum span:first-child {
+        font-size: 14px;
+        font-weight: var(--main_font_weight_paragraph_responsive);
+    }
+    .book-page .card .price-details ul li span:last-child,
+    .book-page .card .price-details .price-sum span:last-child  {
+        font-size: 14px;
+        font-weight:var(--font_weight_section_title);
+    }
+
+    .rating-value {
+        padding: 7.07px 14.15px 7.07px 14.15px;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+        background-color: white;
+        border: 1px #8DD3BB solid;
+        width: 35px;
+        height: 28px;
+        color: black;
+        font-size: 10px;
+        font-weight: 500;
+    }
+    .price-details {
+        margin-top: 20px;
+    }
+    .price-details hr {
+        margin: 1.83rem 0;
+    }
+    .details p {
+        margin-bottom: 5px;
+    }
+
+    .book-form button {
+        width: 100%;
+        background-color: var(--main_green);
+        border: none;
+        color: black;
+    }
+    .book-form button:hover {
+        background-color: var(--main_green);
+    }
