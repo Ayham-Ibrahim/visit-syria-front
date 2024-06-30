@@ -48,7 +48,7 @@ function Navbar() {
                 </li>
                 <li>
                   <Link
-                    to="blog"
+                    to="blogs/marks"
                     className={`  ${activeItem === "blog" ? "active-nav" : ""}`}
                     onClick={() => handleItemClick("blog")}
                   >
@@ -57,7 +57,7 @@ function Navbar() {
                 </li>
                 <li>
                   <Link
-                    to="explore"
+                    to="explore/lands"
                     className={`  ${
                       activeItem === "explore" ? "active-nav" : ""
                     }`}
@@ -68,7 +68,7 @@ function Navbar() {
                 </li>
                 <li>
                   <Link
-                    to="about"
+                    to="about/visit"
                     className={`  ${
                       activeItem === "about" ? "active-nav" : ""
                     }`}

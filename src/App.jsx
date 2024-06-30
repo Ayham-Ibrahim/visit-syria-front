@@ -21,22 +21,22 @@ function App() {
   return (
     <>
 
-        <ToastContainer
+  <Navbar />
+        {/* <ToastContainer
         position="top-right"
         autoClose={3000}
         hideProgressBar={false}
         newestOnTop={false}
         closeOnClick
         rtl={false}
-      />
-    <Navbar />
+      /> */}
 
     <Routes>
       <Route path='/' element={<HomePage/>} />
       <Route path='/explore/:section' element={<Explorer />} />
       <Route path='/about/:section' element={<AboutPage />} />
       <Route path='/blogs/:section' element={<ExploreBlog />} />
-      <Route path='/blog' element={<BlogPage />} />
+      {/* <Route path='/blog' element={<BlogPage />} /> */}
       <Route path='/booking' element={<BookPage />} />
       <Route path='/recommendations' element={<RecommendationsPage />} />
       <Route path='/register' element={<Register />} />
